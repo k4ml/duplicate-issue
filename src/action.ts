@@ -62,6 +62,7 @@ export namespace Action {
         body,
         title: issue.title,
         labels: issue.labels,
+        owner: context.repo.owner,
         milestone: issue.milestone ? issue.milestone.number : undefined,
       })
     } catch (e) {
